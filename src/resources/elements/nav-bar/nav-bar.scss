@@ -1,16 +1,10 @@
 nav-bar{
-    .nav-bar{
-        display: flex; 
-        flex-flow:column;  
-        height: 100%;
-    }
-    .tab{
-        flex: 1;
-        display: flex;
-        justify-content:center;
-        align-items:center;
-        transform: rotate(90deg);
-        
-        width: calc(100vh/2);
+    nav{
+        padding-top:0 !important;
+        a{
+            padding-top:0 !important;
+            padding-bottom:0 !important;
+            height:25vh !important;
+        }
     }
 }

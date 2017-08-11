@@ -1,10 +1,13 @@
+import 'material-design-lite';
+
 import {Aurelia} from 'aurelia-framework'
 import environment from './environment';
 
 export function configure(aurelia: Aurelia) {
   aurelia.use
     .standardConfiguration()
-    .feature('resources');
+    .feature('resources')
+    .plugin('aurelia-mdl-plugin');
 
   if (environment.debug) {
     aurelia.use.developmentLogging();

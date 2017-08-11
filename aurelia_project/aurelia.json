@@ -29,6 +29,7 @@
     "fileExtension": ".scss",
     "source": "src/**/*.scss"
   },
+  "packageManager": "yarn",
   "editor": {
     "id": "vscode",
     "displayName": "Visual Studio Code"
@@ -127,6 +128,20 @@
             "path": "../node_modules/aurelia-testing/dist/amd",
             "main": "aurelia-testing",
             "env": "dev"
+          },
+          {
+            "name": "material-design-lite",
+            "main": "dist/material.min.js",
+            "path": "../node_modules/material-design-lite",
+            "resources": [
+              "material.css"
+            ]
+          },
+          {
+            "name": "aurelia-mdl-plugin",
+            "main": "index",
+            "path": "../node_modules/aurelia-mdl-plugin/dist/amd",
+            "resources": []
           }
         ]
       }
