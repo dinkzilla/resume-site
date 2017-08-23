@@ -1,10 +1,24 @@
 layout{
     nav{
         padding-top:0 !important;
+        background: hotpink;
         a{
             padding-top:0 !important;
             padding-bottom:0 !important;
             height:25vh !important;
+            color: white !important;
+            &.active{
+                color: hotpink !important;
+                background: black !important;
+                &:hover{
+                    background: black !important;
+                    color: hotpink !important;
+                }
+            }
+            &:hover{
+                color: black !important;
+                background: hotpink !important;
+            }
         }
         .vertical{
             writing-mode: vertical-lr; 
