@@ -1,12 +1,14 @@
 <template>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-pink.min.css" />
   <require from="./app.css"></require>
-  <require from="material-design-lite/material.css"></require>
+
   <require from="resources/elements/layout/layout"></require>
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 
   <layout>
-    <div slot="body">
+    <div slot="body" class="content">
       <router-view></router-view>
     </div>
   </layout>
