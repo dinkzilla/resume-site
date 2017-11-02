@@ -4,7 +4,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
     <div class="mdl-layout__drawer" style="width:100px">
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link vertical big-font ${router.currentInstruction.config.name === 'work' ? 'active' : ''}" click.delegate="router.navigate('work')">WORK</a>
+        <a class="mdl-navigation__link vertical big-font clear-button" click.delegate="router.navigateToRoute('clear')">X</a>
         <a class="mdl-navigation__link vertical big-font ${router.currentInstruction.config.name === 'dev' ? 'active' : ''}" click.delegate="router.navigate('dev')">DEV</a>
         <a class="mdl-navigation__link vertical big-font ${router.currentInstruction.config.name === 'risk' ? 'active' : ''}" click.delegate="router.navigate('risk')">RISK</a>
         <a class="mdl-navigation__link vertical big-font ${router.currentInstruction.config.name === 'design' ? 'active' : ''}" click.delegate="router.navigate('design')">DESIGN</a>

@@ -5,19 +5,24 @@ layout{
         a{
             padding-top:0 !important;
             padding-bottom:0 !important;
-            height:25vh !important;
             color: white !important;
             &.active{
                 color: hotpink !important;
-                background: black !important;
+                background: blue !important;
                 &:hover{
-                    background: black !important;
+                    background: blue !important;
                     color: hotpink !important;
                 }
             }
             &:hover{
-                color: black !important;
+                color: blue !important;
                 background: hotpink !important;
+            }
+            &:not(.clear-button){
+                height:30vh !important;
+            }
+            &.clear-button{
+                height:10vh !important;
             }
         }
         .vertical{
@@ -37,5 +42,17 @@ layout{
         @media screen and (max-width: 1024px){
             margin-left: 0px !important;
         }
+    }
+    .page-content{
+        overflow: hidden;
+    }
+    .content{
+        margin: 20px;
+    }
+    .mdl-layout__container{
+        max-width: 850px;
+        position: static !important;
+        margin: auto;
+        background: white;
     }
 }
